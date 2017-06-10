@@ -12,8 +12,10 @@ The PS2 cards (SCPH-10020) and compatible is NOT supported (see doc/FAQ).
 ## Compiling
 
 ```sh
-gcc main.c `pkg-config --libs --cflags libusb-1.0`
+make
 ```
+
+By default, the flags for libusb are looked up via pkg-config; these can be overridden by setting the CFLAGS and LDFLAGS environment variables.
 
 ## Usage
 
