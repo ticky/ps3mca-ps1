@@ -11,19 +11,19 @@ The PS2 cards (SCPH-10020) and compatible is NOT supported (see doc/FAQ).
 
 ## Compiling
 
+```sh
 make
+```
 
 By default, the flags for libusb are looked up via pkg-config; these can be overridden by setting the CFLAGS and LDFLAGS environment variables.
 
-
 ## Usage
 
-"ps3mca-ps1 v" for verify what type of card is (PS1 or PS2).<br>
-"ps3mca-ps1 s" for verify if is a original card. Some known bug (see doc/FAQ).<br>
-"ps3mca-ps1 r" for reading.<br>
-"ps3mca-ps1 w" for writing all memory card (WARNING need a write.mcd file), (see doc/FAQ).<br>
-"ps3mca-ps1 w 0 1023" for writing memory card from frame 0 to frame 1023 (but you can select all value from 0 to 1023, first frame must be minor or at least equal to last frame) (WARNING need a write.mcd file), (see doc/FAQ).<br>
-
+* `ps3mca-ps1 v` for verify what type of card is (PS1 or PS2).
+* `ps3mca-ps1 s` for verify if is a original card. Some known bug (see doc/FAQ).
+* `ps3mca-ps1 x` for verify if is a PocketStation card.
+* `ps3mca-ps1 w` for writing all memory card (WARNING need a write.mcd file), (see doc/FAQ).
+* `ps3mca-ps1 w 0 1023` for writing memory card from frame 0 to frame 1023 (but you can select all value from 0 to 1023, first frame must be minor or at least equal to last frame) (WARNING need a write.mcd file), (see doc/FAQ).
 
 ## Supported file
 
